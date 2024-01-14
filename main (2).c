@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "raylib.h"
 #define MAX_ELEMENTS 20
-
 // Fonction de tri par sélection avec représentation visuelle
 void selectionSortVisual(int arr[], int n, int ascending) {
     const int screenWidth = 900;
@@ -66,9 +65,8 @@ void selectionSortVisual(int arr[], int n, int ascending) {
     }
 // Ferme la fenêtre graphique à la fin
     CloseWindow();
-}
-
-int main() {
+} 
+        int main() {
     int taille;
     int i;
 
@@ -101,7 +99,7 @@ int main() {
 
     // Boucle principale du programme
     while (!WindowShouldClose()) {
-        //Vérifie si la souris est sur le bouton Ascendant et si le bouton gauche est enfoncé
+        // Vérifie si la souris est sur le bouton Ascendant et si le bouton gauche est enfoncé
         if (CheckCollisionPointRec(GetMousePosition(), buttonAsc) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
             printf("Ascending Sort/\n");
             selectionSortVisual(arr, taille, 1); // Appelle la fonction de tri avec l'option Ascendant

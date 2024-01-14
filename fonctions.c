@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include "raylib.h"
-#define MAX_ELEMENTS 20
-
 // Fonction de tri par sélection avec représentation visuelle
 void selectionSortVisual(int arr[], int n, int ascending) {
     const int screenWidth = 900;
@@ -66,4 +62,4 @@ void selectionSortVisual(int arr[], int n, int ascending) {
     }
 // Ferme la fenêtre graphique à la fin
     CloseWindow();
-}
+} 
